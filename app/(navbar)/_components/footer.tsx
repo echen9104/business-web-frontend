@@ -2,20 +2,22 @@ import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export const Navbar = () => {
+export const Footer = () => {
     return (
-        <div className="fixed top-0 w-full h-14 px-4 border-b shadow-sm flex bg-white items-center">
+        <div className="fixed bottom-0 w-full p-4 border-t bg-slate-100">
             <div className="md:mx-w-screen-2xl mx-auto flex items-center w-full justify-between">
                 <Logo />
                 <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
-                    <Button size="sm" variant="outline" asChild>
-                        <Link href="/sign-in">
-                            Login
+                    <Button size="sm" variant="ghost" asChild>
+                        {/* TODO: Add privacy policy link */}
+                        <Link href="/">
+                            Privacy Policy
                         </Link>                        
                     </Button>
-                    <Button size="sm" asChild>
-                        <Link href="/sign-up">
-                            Sign up
+                    <Button size="sm" variant="ghost" asChild>
+                        {/* TODO: Add terms of service link */}
+                        <Link href="/">
+                            Terms of Service
                         </Link> 
                     </Button>
                 </div>
