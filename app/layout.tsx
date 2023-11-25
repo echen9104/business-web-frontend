@@ -15,10 +15,12 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<div className="h-full bg-slate-100">
-			<main>
-				{children} 
-			</main>
-		</div>
+		<html lang="en">
+			<body>
+				<div className="h-full bg-slate-100">
+					{children}
+				</div>
+			</body>
+		</html>
 	)
 }
