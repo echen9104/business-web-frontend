@@ -10,7 +10,7 @@ const textFont = Poppins({
 
 export default function Home() {
     return (
-		<div>
+		<div className='mt-14'>
 			<div className={cn("", headingFont.className)}>
 				Index Header
 			</div>

@@ -16,11 +16,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body>
-				<div className="h-full bg-slate-100">
-					{children}
-				</div>
-			</body>
+				<body>
+					<div className="h-full bg-slate-100">
+						{children}
+					</div>
+				</body>
 		</html>
 	)
 }
